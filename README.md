@@ -1,7 +1,13 @@
 # Realizar un push
-``` gitexclude
+Realizar un cambio de rama
+``` bash
+git checkout -b <Nombre de la rama a guradar>
+```
+
+``` bash
 git push origin <Nombre de la rama>
 ```
+
 ## Ramas designadas
 
 - Joham
