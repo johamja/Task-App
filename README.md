@@ -1,3 +1,21 @@
+# Realizar un push
+Realizar un cambio de rama
+``` bash
+git checkout -b <Nombre de la rama a guradar>
+```
+
+``` bash
+git push origin <Nombre de la rama>
+```
+
+## Ramas designadas
+
+- Joham
+- Daniel
+- Jose
+- Laura 
+- main ``implemeta el codigo final de cada solicitud despues de hacer la revision de calidad y funcionamiento de cada rama`` rama destianda al la entrega de cada split
+
 # Task-App
 Aplicación de ingeniería de software
 
