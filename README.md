@@ -1,23 +1,59 @@
-# Realizar un push
-Realizar un cambio de rama
-``` bash
-git checkout -b <Nombre de la rama a guradar>
-```
-
-``` bash
-git push origin <Nombre de la rama>
-```
-
-## Ramas designadas
-
-- Joham
-- Daniel
-- Jose
-- Laura 
-- main ``implemeta el codigo final de cada solicitud despues de hacer la revision de calidad y funcionamiento de cada rama`` rama destianda al la entrega de cada split
-
 # Task-App
 Aplicación de ingeniería de software
+# Clonar el repositorio
+Iniciar git en la carpeta que se desea guradar el proyecto
+``` bash
+git init
+```
+Añadir el repositorio a la carpeta
+``` bash
+git remote add <Nombre de la rama asignada> <Link del repositorio>
+```
+El link al repositorio puede ser:
+> **HTTPS**
+>``` bash
+> https://github.com/johamja/Task-App.git
+>```
+> **SSH**
+>``` bash
+> git@github.com:johamja/Task-App.git
+>```
+Añadimos la rama asignada 
+``` bash
+git checkout -b <Nombre de la rama asignada>
+```
+Luego realizar el pull
+``` bash
+git pull <Nombre de la rama asignada> main
+```
+> Comandos de ayuda 
+> 
+> `git status` = visualizar los archivos que esta sin añadir al commit
+> 
+> `git log` = visualizar el commit realizado
+
+
+# Realizar un push
+Añaidir los cambios
+``` bash
+git add .
+```
+Añadir comentario
+```
+git commit -m "<Comentario del push a realizar>"
+```
+Realizar el Push
+``` bash
+git push --set-upstream origin <Nombre de la rama asignada>
+```
+
+## Ramas asignadas
+
+- Joham https://github.com/johamja
+- Daniel https://github.com/Daniel120924
+- Jose https://github.com/josemiguel1014
+- Laura https://github.com/laura-152020
+- main -> ``implemeta el codigo final de cada solicitud despues de hacer la revision de calidad y funcionamiento de cada rama`` rama destianda para la entrega de cada split
 
 # Documentacion 
 Word del Proyecto 
