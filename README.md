@@ -50,10 +50,13 @@ git push
 ## Ramas asignadas
 
 - Joham https://github.com/johamja
-- Daniel https://github.com/Daniel120924
+- DanielD https://github.com/Daniel120924
 - Jose https://github.com/josemiguel1014
 - Laura https://github.com/laura-152020
-- main -> ``implemeta el codigo final de cada solicitud despues de hacer la revision de calidad y funcionamiento de cada rama`` rama destianda para la entrega de cada split
+- DanielA elbotcrack@gmail.com
+- Emanuel https://github.com/iEmanuelG
+- Developing -> ``Rama de codigo en desarrollo``
+- Master -> ``implemeta el codigo final de cada solicitud despues de hacer la revision de calidad y funcionamiento de cada rama`` rama destianda para la entrega de cada split
 
 # Documentacion 
 Word del Proyecto 
