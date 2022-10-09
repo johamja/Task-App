@@ -58,6 +58,8 @@ git push
 # Documentacion 
 Word del Proyecto 
 [Task-App](https://upbeduco-my.sharepoint.com/:w:/g/personal/jaider_morales_upb_edu_co/EZUO_zTJ865IoJLpbNsz_8MBc7bRWz5cOct8caM_R2PFjQ?e=fevP6L)
+
+Plataforma [DevOps](https://dev.azure.com/)
 # Diagramas
 
 [Diagrama de uso UML](https://upbeduco-my.sharepoint.com/:u:/g/personal/jaider_morales_upb_edu_co/ESMg2HWuY-FJur_SpF_CxewBfchtsDJEVdGVn15lfL2dsg?e=QMG7f7)
