@@ -44,7 +44,7 @@ git commit -m "<Comentario del push a realizar>"
 ```
 Realizar el Push
 ``` bash
-git push --set-upstream origin <Nombre de la rama asignada>
+git push 
 ```
 
 ## Ramas asignadas
