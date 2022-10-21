@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FOrder</string>
+    <string name="welcome">BIenvenido</string>
+    <string name="action_register">Crear una cuenta</string>
+    <string name="action_sign">Iniciar sesión</string>
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+</resources>
