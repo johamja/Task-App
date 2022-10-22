@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FOrder</string>
-    <string name="welcome">BIenvenido</string>
+    <string name="welcome">Bienvenido</string>
     <string name="action_register">Crear una cuenta</string>
     <string name="action_sign">Iniciar sesión</string>
     <string name="prompt_email">Correo</string>
     <string name="prompt_password">Contraseña</string>
+    <string name="Loguin_1">Inicia sesión para continuar</string>
+    <string name="Loguin_2">Se te olvidó tu contraseña?</string>
+    <string name="Loguin_3">Aceptar todas las políticas de privacidad</string>
+    <string name="Loguin_4">FOrder 2022 v1.0</string>
 </resources>
