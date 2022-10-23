@@ -17,4 +17,7 @@
     <string name="Create_Account_5">Hola!</string>
     <string name="Home_App_1">Cuadernos</string>
     <string name="Home_App_2">Categorías</string>
+    <string name="Home_App_3">Notas rápidas</string>
+    <string name="Home_App_4">Notas privadas</string>
+    <string name="greeting">Hola!</string>
 </resources>

@@ -20,4 +20,7 @@
     <string name="Create_Account_5">Hi!</string>
     <string name="Home_App_1">Notebooks</string>
     <string name="Home_App_2">Categorías</string>
+    <string name="Home_App_3">Fast notes</string>
+    <string name="Home_App_4">Private notes</string>
+    <string name="greeting">Hi!</string>
 </resources>

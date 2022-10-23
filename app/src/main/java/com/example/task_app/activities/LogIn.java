@@ -22,7 +22,7 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent intent = new Intent(v.getContext(), SyncUp.SyncUp.class);
+                Intent intent = new Intent(v.getContext(), SyncUp.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent intent = new Intent(v.getContext(), CreateAccount.CreateAccount.class);
+                Intent intent = new Intent(v.getContext(), CreateAccount.class);
                 startActivity(intent);
             }
         });
