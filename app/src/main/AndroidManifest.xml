@@ -13,6 +13,19 @@
         android:theme="@style/Theme.TaskApp"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+            android:name=".activities.SyncUp"
+=======
+            android:name=".HomeApp"
+>>>>>>> 495f00fd4447177c7d6f6ce7e9ed54e18e8de8cb
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+<<<<<<< HEAD
+=======
             android:name=".activities.SyncUp"
             android:exported="false">
             <meta-data
@@ -20,6 +33,7 @@
                 android:value="" />
         </activity>
         <activity
+>>>>>>> 495f00fd4447177c7d6f6ce7e9ed54e18e8de8cb
             android:name=".activities.CreateAccount"
             android:parentActivityName=".activities.LogIn" />
         <activity
@@ -27,6 +41,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
