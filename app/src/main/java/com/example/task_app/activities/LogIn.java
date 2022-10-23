@@ -7,10 +7,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.task_app.R;
-<<<<<<< HEAD:app/src/main/java/com/example/task_app/activities/LogIn.java
-
-=======
->>>>>>> 495f00fd4447177c7d6f6ce7e9ed54e18e8de8cb:app/src/main/java/com/example/task_app/LogIn.java
 
 
 public class LogIn extends AppCompatActivity { // implementar el extends para que funcionen los layouts tambien en el XML
@@ -26,7 +22,7 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent intent = new Intent(v.getContext(), SyncUp.class);
+                Intent intent = new Intent(v.getContext(), SyncUp.SyncUp.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +32,7 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent intent = new Intent(v.getContext(), CreateAccount.class);
+                Intent intent = new Intent(v.getContext(), CreateAccount.CreateAccount.class);
                 startActivity(intent);
             }
         });
