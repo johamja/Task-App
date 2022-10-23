@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="#FFFFFF"
     tools:background="#FFFFFF"
-    tools:context=".Loguin"> <!-- Concatenar la clase al layout -->
+    tools:context=".Sign_in"> <!-- Concatenar la clase al layout -->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -66,6 +66,7 @@
         android:foreground="@drawable/plain_text_loguin"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:paddingLeft="5dp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -97,6 +98,7 @@
         android:foreground="@drawable/plain_text_loguin"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:paddingLeft="5dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -123,22 +125,23 @@
         app:layout_constraintGuide_percent="0.57" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Sing_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="@dimen/Loguin_pading"
         android:background="@drawable/boton_loguin"
-        android:text="@string/action_sign"
+        android:text="@string/Loguin_5"
         android:textColor="@color/Color5"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/Create_account"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
@@ -147,10 +150,11 @@
         android:background="@drawable/boton_loguin"
         android:text="@string/action_register"
         android:textColor="@color/Color5"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/Sing_in" />
 
     <TextView
         android:id="@+id/textView5"

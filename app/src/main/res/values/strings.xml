@@ -4,8 +4,8 @@
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_register">Create Account</string>
-    <string name="action_sign">Sign in</string>
-    <string name="welcome">Welcome !</string>
+    <string name="Loguin_5">Sign in</string>
+    <string name="welcome">Welcome!</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
@@ -13,4 +13,9 @@
     <string name="Loguin_2">Forgot password?</string>
     <string name="Loguin_3">Accept all privacy policies</string>
     <string name="Loguin_4">FOrder 2022 v1.0</string>
+    <string name="Create_Account_1">Name</string>
+    <string name="Create_Account_2">Surname</string>
+    <string name="Create_Account_3">Phone</string>
+    <string name="Create_Account_4">Create a new account</string>
+    <string name="Create_Account_5">Hi!</string>
 </resources>
