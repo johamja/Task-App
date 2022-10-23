@@ -6,4 +6,8 @@
 
     <!-- Lineas del loguin. -->
     <dimen name="Botones_loguin">8dp</dimen>
+
+    <!-- HomeApp -->
+    <dimen name="Margenes_HomeApp_1">16dp</dimen>
+    <dimen name="Radio_Botones_Home_App">8dp</dimen>
 </resources>

@@ -15,4 +15,6 @@
     <string name="Create_Account_2">Apellido</string>
     <string name="Create_Account_4">Crea una cuenta nueva</string>
     <string name="Create_Account_5">Hola!</string>
+    <string name="Home_App_1">Cuadernos</string>
+    <string name="Home_App_2">Categorías</string>
 </resources>
