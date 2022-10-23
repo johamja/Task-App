@@ -1,11 +1,13 @@
-package com.example.task_app;
+package com.example.task_app.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.task_app.databinding.ActivityLogInBinding;
+
+import com.example.task_app.R;
+
 
 
 public class LogIn extends AppCompatActivity { // implementar el extends para que funcionen los layouts tambien en el XML
