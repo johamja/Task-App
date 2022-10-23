@@ -13,20 +13,28 @@
         android:theme="@style/Theme.TaskApp"
         tools:targetApi="31">
         <activity
-            android:name=".SyncUp"
+            android:name=".HomeApp"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CreateAccount"
-            android:parentActivityName=".LogIn" />
+            android:name=".activities.SyncUp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".Pantalla_carga"
+            android:name=".activities.CreateAccount"
+            android:parentActivityName=".activities.LogIn" />
+        <activity
+            android:name=".activities.Pantalla_carga"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -34,7 +42,7 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".LogIn"
+            android:name=".activities.LogIn"
             android:exported="true"
             android:label="@string/title_activity_login" />
     </application>
