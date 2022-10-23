@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="#FFFFFF"
     tools:background="#FFFFFF"
-    tools:context=".Sign_in"> <!-- Concatenar la clase al layout -->
+    tools:context=".LogIn"> <!-- Concatenar la clase al layout -->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -125,7 +125,7 @@
         app:layout_constraintGuide_percent="0.57" />
 
     <Button
-        android:id="@+id/Sing_in"
+        android:id="@+id/Log_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
@@ -154,7 +154,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sing_in" />
+        app:layout_constraintTop_toBottomOf="@+id/Log_in" />
 
     <TextView
         android:id="@+id/textView5"
