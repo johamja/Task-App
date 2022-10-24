@@ -41,10 +41,10 @@ public class CreateAccount extends AppCompatActivity {
          String PasswordS = Password.getText().toString();
 
          if (EmailS.isEmpty()){
-             Email.setError("Nesesita un correo");
+             Email.setError("Necesita un correo");
              Email.requestFocus();
          } else if (PasswordS.isEmpty()){
-             Password.setError("Nesesita una contraseña");
+             Password.setError("Necesita una contraseña");
              Password.requestFocus();
          } else {
              mAuth.createUserWithEmailAndPassword(EmailS, PasswordS)
