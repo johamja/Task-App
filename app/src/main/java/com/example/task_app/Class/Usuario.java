@@ -1,3 +1,7 @@
+package com.example.task_app.Class;
+
+import android.media.Image;
+
 public class Usuario {
     private String Correo;
     private int NumeroTelefono;
@@ -13,25 +17,36 @@ public class Usuario {
         Nombre = nombre;
         Contraseña = contraseña;
         this.imagen = imagen;
+
     }
 
-    public void Cargar_usuario(){
+    public void Crear_usuario() {
+        
+    }
+
+    public void Cargar_usuario() throws Exception{
         try {
-            
+            // cargar de un archivo temporal 
         } catch (Exception e) {
             throw new Exception("Ocurrio un error al cargar usuario."+e);
         }
     }
 
-    public void cerrar_sesion(){
+    public void cerrar_sesion() throws Exception{
         try {
+
+            // bucaria el temporal 
+            // lo elimina 
+            // retorna a login
+            // realiza finish() para que no pueda retroceder a la paginas abiertas antes
+            // borren los datos ?? 
 
         } catch (Exception e) {
             throw new Exception("Ocurrio un error al cerrar sesion."+e);
         }
     }
     
-    public void cambiar_correo(String correo){
+    public void cambiar_correo(String correo)throws Exception{
         try {
 
         } catch (Exception e) {
@@ -39,7 +54,7 @@ public class Usuario {
         }
     }
 
-    public void cambiar_telefono(int numtelefono){
+    public void cambiar_telefono(int numtelefono)throws Exception{
         try {
 
         } catch (Exception e) {
@@ -47,7 +62,7 @@ public class Usuario {
         }
     }
 
-    public void cambiar_nombre(String nombre){
+    public void cambiar_nombre(String nombre)throws Exception{
                 try {
 
         } catch (Exception e) {
@@ -55,7 +70,7 @@ public class Usuario {
         }
     }
     
-    public void cambiar_apellido(String apellido){
+    public void cambiar_apellido(String apellido)throws Exception{
         try {
 
         } catch (Exception e) {
@@ -63,7 +78,7 @@ public class Usuario {
         }
     }
 
-    public void cambiar_imagen(Image imagen){
+    public void cambiar_imagen(Image imagen)throws Exception{
         try {
 
         } catch (Exception e) {
@@ -73,7 +88,7 @@ public class Usuario {
 
     //CAMBIAR CONTRASEÑA NO ES UN METODO 100% A HACER.
     //--------------------------------------------------------------------------------
-    public void cambiar_contraseña(String contraseña){
+    public void cambiar_contraseña(String contraseña)throws Exception{
                 try {
 
         } catch (Exception e) {
