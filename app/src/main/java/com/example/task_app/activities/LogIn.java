@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.task_app.R;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -48,7 +50,6 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
                 Log.i(TAGI, " Acción del botón Iniciar sesión");
                 String email_s = email.getText().toString();
                 String password_s = password.getText().toString();
-                Log.i(TAGI, email_s + "  " + password_s + " contraseñas");
                 Log.w(TAGA, "Enviando contraseña y password al metodo Log_in");
                 Log_in(email_s, password_s);
             }
@@ -72,30 +73,30 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
         try {
             if (email_s.isEmpty()) {
                 email.setError(getString(R.string.Loguin_6));
+                email.requestFocus();
             } else if (password_s.isEmpty()) {
                 password.setError(getString(R.string.Loguin_7));
+                password.requestFocus();
             } else if (!privacy_policies.isChecked()) {
                 privacy_policies.setError(getString(R.string.Loguin_8));
+                privacy_policies.requestFocus();
             } else {
                 Log.w(TAGA, "Iniciando la api de FirebaseAuth");
                 mAuth = FirebaseAuth.getInstance();
                 Log.w(TAGA, "Autenticando el usuario en FirebaseAuth");
-                mAuth.signInWithEmailAndPassword(email_s, password_s)
-                        .addOnCompleteListener(this, task -> {
-                            if (task.isSuccessful()) {
-                                // Sign in success, update UI with the signed-in user's information
-                                Log.i(TAGI, "Inicio de sesión con correo electrónico: éxito");
-                                Log.w(TAGA, "Iniciar la actividad de SyncUp");
-                                Intent intent = new Intent(LogIn.this, SyncUp.class);
-                                startActivity(intent);
-                                finish();
-                            } else {
-                                // If sign in fails, display a message to the user.
-                                Log.i(TAGI, email_s + " ---- " + password_s);
-                                Log.i(TAGE, "Inicio de sesión con correo electrónico: error", task.getException());
-                                Toast.makeText(LogIn.this, getString(R.string.Loguin_9), Toast.LENGTH_LONG).show();
-                            }
-                        });
+                mAuth.signInWithEmailAndPassword(email_s, password_s).addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        Log.i(TAGI, "Inicio de sesión con correo electrónico: éxito");
+                        Log.w(TAGA, "Iniciar la actividad de SyncUp");
+                        Intent intent = new Intent(LogIn.this, SyncUp.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Log.i(TAGI, email_s + " ---- " + password_s);
+                        Log.e(TAGE, "Inicio de sesión con correo electrónico: error", task.getException());
+                        Toast.makeText(LogIn.this, getString(R.string.Loguin_9), Toast.LENGTH_LONG).show();
+                    }
+                });
             }
         } catch (Exception e) {
             Log.e(TAGE, "Error del metodo Log_in");
