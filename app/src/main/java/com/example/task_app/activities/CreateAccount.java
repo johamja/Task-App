@@ -25,6 +25,7 @@ public class CreateAccount extends AppCompatActivity {
                 // Code here executes on main thread after user presses button
                 Intent intent = new Intent(v.getContext(), HomeApp.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

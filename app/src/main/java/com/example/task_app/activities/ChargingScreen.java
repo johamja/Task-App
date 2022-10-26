@@ -9,12 +9,12 @@ import android.os.Handler;
 import com.example.task_app.MainActivity;
 import com.example.task_app.R;
 
-public class Pantalla_carga extends AppCompatActivity {
+public class ChargingScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla_carga);
+        setContentView(R.layout.activity_charging_screen);
 
         int Tiempo = 1000;
 
@@ -24,7 +24,7 @@ public class Pantalla_carga extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Pantalla_carga.this, MainActivity.class));
+                startActivity(new Intent(ChargingScreen.this, MainActivity.class));
                 finish();
             }
         },Tiempo);
