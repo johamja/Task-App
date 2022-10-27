@@ -210,7 +210,9 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
+
                     android:id="@+id/CreateAccount_EditText_email"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -254,6 +256,7 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
+
                     android:id="@+id/CreateAccount_EditText_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
