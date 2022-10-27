@@ -20,4 +20,9 @@
     <string name="Home_App_3">Notas rápidas</string>
     <string name="Home_App_4">Notas privadas</string>
     <string name="greeting">Hola!</string>
+    <string name="Loguin_6">Se requiere un correo electrónico</string>
+    <string name="Loguin_7">"Se requiere una contraseña "</string>
+    <string name="Loguin_8">Acepte los términos y condiciones de FOlder</string>
+    <string name="Loguin_9">Fallo en la autenticación</string>
+    <string name="Create_Account_6">Error al crear usuario</string>
 </resources>

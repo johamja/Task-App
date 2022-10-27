@@ -48,7 +48,7 @@
             android:name=".activities.CreateAccount"
             android:parentActivityName=".activities.LogIn" />
         <activity
-            android:name=".activities.Pantalla_carga"
+            android:name=".activities.ChargingScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
