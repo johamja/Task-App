@@ -4,13 +4,4 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Category">
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="322dp"
-        tools:layout_editor_absoluteY="518dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".Category"/>
