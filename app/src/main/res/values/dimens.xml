@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="Loguin_pading">70dp</dimen>
+
+    <!-- Lineas del loguin. -->
+    <dimen name="Botones_loguin">8dp</dimen>
+
+    <!-- HomeApp -->
+    <dimen name="Margenes_HomeApp_1">16dp</dimen>
+    <dimen name="Radio_Botones_Home_App">8dp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FOrder</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="action_register">Crear una cuenta</string>
+    <string name="Loguin_5">Iniciar sesión</string>
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="Loguin_1">Inicia sesión para continuar</string>
+    <string name="Loguin_2">Se te olvidó tu contraseña?</string>
+    <string name="Loguin_3">Aceptar todas las políticas de privacidad</string>
+    <string name="Loguin_4">FOrder 2022 v1.0</string>
+    <string name="Create_Account_1">Nombre</string>
+    <string name="Create_Account_3">Telefono</string>
+    <string name="Create_Account_2">Apellido</string>
+    <string name="Create_Account_4">Crea una cuenta nueva</string>
+    <string name="Create_Account_5">Hola!</string>
+    <string name="Home_App_1">Cuadernos</string>
+    <string name="Home_App_2">Categorías</string>
+    <string name="Home_App_3">Notas rápidas</string>
+    <string name="Home_App_4">Notas privadas</string>
+    <string name="greeting">Hola!</string>
+    <string name="Loguin_6">Se requiere un correo electrónico</string>
+    <string name="Loguin_7">"Se requiere una contraseña "</string>
+    <string name="Loguin_8">Acepte los términos y condiciones de FOlder</string>
+    <string name="Loguin_9">Fallo en la autenticación</string>
+    <string name="Create_Account_6">Error al crear usuario</string>
+</resources>
