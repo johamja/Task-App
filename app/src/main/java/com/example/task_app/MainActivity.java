@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         Log.v(TAGC,"Iniciando Actividad");
         super.onCreate(savedInstanceState);
 
