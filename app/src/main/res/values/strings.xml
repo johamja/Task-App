@@ -28,4 +28,6 @@
     <string name="Loguin_8">Accept the terms and conditions of FOlder</string>
     <string name="Loguin_9">Authentication failure</string>
     <string name="Create_Account_6">Error creating user</string>
+    <string name="Settings_1">Settings</string>
+    <string name="Settings_2">Sign off</string>
 </resources>

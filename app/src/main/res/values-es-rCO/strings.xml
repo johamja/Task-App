@@ -25,4 +25,6 @@
     <string name="Loguin_8">Acepte los términos y condiciones de FOlder</string>
     <string name="Loguin_9">Fallo en la autenticación</string>
     <string name="Create_Account_6">Error al crear usuario</string>
+    <string name="Settings_1">Configuraciones</string>
+    <string name="Settings_2">Cerrar sesión</string>
 </resources>
