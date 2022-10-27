@@ -178,4 +178,15 @@
         </LinearLayout>
     </ScrollView>
 
+    <ImageButton
+        android:id="@+id/HomeApp_Button_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/Margenes_HomeApp_1"
+        android:layout_marginBottom="4dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
