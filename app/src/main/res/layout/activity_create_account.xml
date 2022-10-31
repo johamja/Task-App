@@ -72,13 +72,13 @@
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
                     android:text="@string/Create_Account_1"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editText1"
+                    android:id="@+id/CreateAccount_EditText_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -116,13 +116,13 @@
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
                     android:text="@string/Create_Account_2"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/CreateAccount_EditText_surname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -160,13 +160,13 @@
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
                     android:text="@string/Create_Account_3"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/CreateAccount_EditText_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -204,13 +204,15 @@
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
                     android:text="@string/prompt_email"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editText4"
+
+                    android:id="@+id/CreateAccount_EditText_email"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -248,13 +250,14 @@
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
                     android:text="@string/prompt_password"
-                    app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <EditText
-                    android:id="@+id/editText5"
+
+                    android:id="@+id/CreateAccount_EditText_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -282,14 +285,14 @@
                 android:orientation="vertical">
 
                 <CheckBox
-                    android:id="@+id/checkBox2"
+                    android:id="@+id/CreateAccount_CheckBox_privacy_policies"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/Loguin_3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                    app:layout_constraintTop_toBottomOf="@+id/LogIn_EditText_password" />
             </LinearLayout>
 
         </LinearLayout>
@@ -303,7 +306,7 @@
         app:layout_constraintGuide_percent="0.85" />
 
     <Button
-        android:id="@+id/Create_account_2"
+        android:id="@+id/CreateAccountcreate_Button_create_account"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"

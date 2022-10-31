@@ -74,7 +74,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout
@@ -102,7 +103,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1.5"
                         android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <EditText
                         android:id="@+id/editTextTextPersonName4"
@@ -110,7 +112,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <EditText
                         android:id="@+id/editTextTextPersonName3"
@@ -118,7 +121,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1.5"
                         android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -142,7 +146,8 @@
                     android:layout_height="match_parent"
                     android:ems="10"
                     android:gravity="start|top"
-                    android:inputType="textMultiLine" />
+                    android:inputType="textMultiLine"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout

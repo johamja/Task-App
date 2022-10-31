@@ -49,13 +49,13 @@
         android:layout_marginEnd="@dimen/Loguin_pading"
         android:layout_marginBottom="10dp"
         android:text="@string/prompt_email"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/LogIn_EditText_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
@@ -81,13 +81,13 @@
         android:layout_marginEnd="@dimen/Loguin_pading"
         android:layout_marginBottom="10dp"
         android:text="@string/prompt_password"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/LogIn_EditText_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
@@ -106,7 +106,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/LogIn_CheckBox_privacy_policies"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
@@ -115,7 +115,7 @@
         android:text="@string/Loguin_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/LogIn_EditText_password" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -125,7 +125,7 @@
         app:layout_constraintGuide_percent="0.57" />
 
     <Button
-        android:id="@+id/Log_in"
+        android:id="@+id/LogIn_Button_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
@@ -141,7 +141,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <Button
-        android:id="@+id/Create_account"
+        android:id="@+id/LogIn_Button_create_account"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
@@ -154,7 +154,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Log_in" />
+        app:layout_constraintTop_toBottomOf="@+id/LogIn_Button_login" />
 
     <TextView
         android:id="@+id/textView5"
