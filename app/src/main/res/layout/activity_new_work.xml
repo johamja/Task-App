@@ -23,7 +23,7 @@
                 android:orientation="horizontal">
 
                 <androidx.constraintlayout.utils.widget.ImageFilterView
-                    android:id="@+id/imageFilterView"
+                    android:id="@+id/back_anw"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -70,7 +70,7 @@
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/et_work"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -98,7 +98,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName5"
+                        android:id="@+id/et_dia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.5"
@@ -107,7 +107,7 @@
                         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName4"
+                        android:id="@+id/et_mes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -116,7 +116,7 @@
                         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName3"
+                        android:id="@+id/et_anio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1.5"
@@ -141,7 +141,7 @@
                     android:textSize="20sp" />
 
                 <EditText
-                    android:id="@+id/editTextTextMultiLine"
+                    android:id="@+id/et_desc"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:ems="10"
@@ -157,6 +157,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/btn_guardartarea"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="45dp"
