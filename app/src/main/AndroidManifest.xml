@@ -13,15 +13,28 @@
         android:theme="@style/Theme.TaskApp"
         tools:targetApi="31">
         <activity
+            android:name=".Category"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".task.NewWorkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".task.WorksActivity"
             android:exported="false" />
         <activity
             android:name=".task.AllWorksActivity"
             android:exported="false" />
         <activity
-            android:name=".task.WorksActivity"
-            android:exported="false" />
-
+            android:name=".activities.Settings"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activities.HomeApp"
             android:exported="false">
@@ -48,6 +61,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".activities.LogIn"
             android:exported="true"
