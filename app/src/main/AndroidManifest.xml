@@ -20,29 +20,13 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Categorias"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-
-            android:name=".MainActivityWork"
+            android:name=".task.NewWorkActivity"
             android:exported="false" />
         <activity
-            android:name=".NewWorkActivity"
+            android:name=".task.WorksActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".WorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AllWorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".category"
+            android:name=".task.AllWorksActivity"
             android:exported="false" />
         <activity
             android:name=".activities.Settings"
