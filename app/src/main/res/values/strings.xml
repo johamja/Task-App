@@ -23,4 +23,11 @@
     <string name="Home_App_3">Fast notes</string>
     <string name="Home_App_4">Private notes</string>
     <string name="greeting">Hi!</string>
+    <string name="Loguin_6">An email is required</string>
+    <string name="Loguin_7">A password is required</string>
+    <string name="Loguin_8">Accept the terms and conditions of FOlder</string>
+    <string name="Loguin_9">Authentication failure</string>
+    <string name="Create_Account_6">Error creating user</string>
+    <string name="Settings_1">Settings</string>
+    <string name="Settings_2">Sign off</string>
 </resources>

@@ -4,6 +4,7 @@ Aplicación de ingeniería de software
 Iniciar git en la carpeta que se desea guradar el proyecto
 ``` bash
 git init
+Hola
 ```
 Añadir el repositorio a la carpeta
 ``` bash
@@ -44,21 +45,26 @@ git commit -m "<Comentario del push a realizar>"
 ```
 Realizar el Push
 ``` bash
-git push --set-upstream origin <Nombre de la rama asignada>
+git push 
 ```
 
 
 ## Ramas asignadas
 
 - Joham https://github.com/johamja
-- Daniel https://github.com/Daniel120924
+- DanielD https://github.com/Daniel120924
 - Jose https://github.com/josemiguel1014
 - Laura https://github.com/laura-152020
-- main -> ``implemeta el codigo final de cada solicitud despues de hacer la revision de calidad y funcionamiento de cada rama`` rama destianda para la entrega de cada split
+- DanielA elbotcrack@gmail.com
+- Emanuel https://github.com/iEmanuelG
+- Developing -> ``Rama de codigo en desarrollo``
+- Master -> ``implemeta el codigo final de cada solicitud despues de hacer la revision de calidad y funcionamiento de cada rama`` rama destianda para la entrega de cada split
 
 # Documentacion 
 Word del Proyecto 
 [Task-App](https://upbeduco-my.sharepoint.com/:w:/g/personal/jaider_morales_upb_edu_co/EZUO_zTJ865IoJLpbNsz_8MBc7bRWz5cOct8caM_R2PFjQ?e=fevP6L)
+
+Plataforma [DevOps](https://dev.azure.com/)
 # Diagramas
 
 [Diagrama de uso UML](https://upbeduco-my.sharepoint.com/:u:/g/personal/jaider_morales_upb_edu_co/ESMg2HWuY-FJur_SpF_CxewBfchtsDJEVdGVn15lfL2dsg?e=QMG7f7)
