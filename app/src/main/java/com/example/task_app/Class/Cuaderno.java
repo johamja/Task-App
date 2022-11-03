@@ -7,22 +7,28 @@ public class Cuaderno {
     private String ID;
     private String nombre;
     private String descripcion;
-    private String tema; //El color en Hexadecimal.
+    private int tema; //El color en Hexadecimal.
     private ArrayList<Nota> listadenotas;
 
     //Constructores
-    public Cuaderno(String ID,String nombre, String descripcion, String tema) throws Exception {
+    public Cuaderno(String ID,String nombre, String descripcion, int tema) throws Exception {
         setID(ID);
         setNombre(nombre);
         setDescripcion(descripcion);
         setTema(tema);
     }
-    public Cuaderno(String ID,String nombre, String descripcion, String tema,ArrayList<Nota> lista) throws Exception {
+    public Cuaderno(String ID,String nombre, String descripcion, int tema,ArrayList<Nota> lista) throws Exception {
         setID(ID);
         setNombre(nombre);
         setDescripcion(descripcion);
         setTema(tema);
         setListadenotas(lista);
+    }
+    //Constructor de prueba
+    public Cuaderno(String nombre, String descripcion, int tema) throws Exception {
+        setNombre(nombre);
+        setDescripcion(descripcion);
+        setTema(tema);
     }
 
     //Metodos
@@ -56,7 +62,7 @@ public class Cuaderno {
     public void Modificar_descripcion(String descripcion) throws Exception {
         setDescripcion(descripcion);
     }
-    public void Modificar_tema(String tema) throws Exception {
+    public void Modificar_tema(int tema) throws Exception {
         setTema(tema);
     }
 
@@ -72,7 +78,7 @@ public class Cuaderno {
     public String getDescripcion() {
         return descripcion;
     }
-    public String getTema() {
+    public int getTema() {
         return tema;
     }
     public ArrayList<Nota> getListadenotas() {
@@ -93,8 +99,8 @@ public class Cuaderno {
         if(descripcion.length()>0) this.descripcion = descripcion;
         else throw new Exception("La descripcion no puede estar vacia.");
     }
-    public void setTema(String tema) throws Exception {
-        if(tema.charAt(0)=='#'&&tema.length()>=2) this.tema = tema;
+    public void setTema(int tema) throws Exception {
+        if(tema>=0) this.tema = tema;
         else throw new Exception("El tema seleccionado es invalido.");
     }
     public void setListadenotas(ArrayList<Nota> listadenotas) {

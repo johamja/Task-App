@@ -46,15 +46,16 @@
     <Button
         android:id="@+id/an_addbton"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:background="@drawable/boton_redondo"
         android:outlineAmbientShadowColor="#FFFFFF"
         android:shadowColor="#FBFBFB"
         android:text="+"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="317dp"
-        tools:layout_editor_absoluteY="655dp" />
+        android:textAlignment="center"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="650dp" />
 
     <TextView
         android:id="@+id/an_cuadernosmenu"
