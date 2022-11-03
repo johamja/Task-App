@@ -20,16 +20,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".task.NewWorkActivity"
-            android:exported="false" />
-        <activity
-            android:name=".task.WorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".task.AllWorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.Settings"
+            android:name=".Categorias"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -53,7 +44,7 @@
             android:name=".activities.CreateAccount"
             android:parentActivityName=".activities.LogIn" />
         <activity
-            android:name=".activities.ChargingScreen"
+            android:name=".activities.Pantalla_carga"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

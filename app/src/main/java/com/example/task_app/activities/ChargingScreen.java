@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.task_app.MainActivity;
 import com.example.task_app.R;
 
 public class ChargingScreen extends AppCompatActivity {
