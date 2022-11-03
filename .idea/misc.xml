@@ -8,7 +8,7 @@
         <entry key="..\:/Users/JOSE MIGUEL/Desktop/UPB/4 Semestre/INGENIERIA DE SOFTWARE/Task-App/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/JOSE MIGUEL/Desktop/UPB/4 Semestre/INGENIERIA DE SOFTWARE/Task-App/app/src/main/res/layout/activity_main_work.xml" value="0.33" />
         <entry key="..\:/Users/JOSE MIGUEL/Desktop/UPB/4 Semestre/INGENIERIA DE SOFTWARE/Task-App/app/src/main/res/layout/activity_new_work.xml" value="0.25" />
-        <entry key="..\:/Users/JOSE MIGUEL/Desktop/UPB/4 Semestre/INGENIERIA DE SOFTWARE/Task-App/app/src/main/res/layout/activity_works.xml" value="0.33" />
+        <entry key="..\:/Users/JOSE MIGUEL/Desktop/UPB/4 Semestre/INGENIERIA DE SOFTWARE/Task-App/app/src/main/res/layout/activity_works.xml" value="0.1" />
         <entry key="..\:/Users/jajom/Documents/Proyectos/proyecto/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.19979919678714858" />
         <entry key="..\:/Users/jajom/Documents/Proyectos/proyecto/app/src/main/res/layout-w936dp/activity_login.xml" value="0.233203125" />
         <entry key="..\:/Users/jajom/Documents/Proyectos/proyecto/app/src/main/res/layout/activity_login.xml" value="0.3109375" />
@@ -17,7 +17,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

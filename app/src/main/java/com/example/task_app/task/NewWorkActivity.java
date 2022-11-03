@@ -2,11 +2,13 @@ package com.example.task_app.task;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.task_app.R;
 
@@ -17,6 +19,7 @@ public class NewWorkActivity extends AppCompatActivity {
     ArrayList<String> tarea, fecha, desc;
     EditText etTarea, etDia, etMes, etAnio, etDesc;
     LinearLayout btnGuardar;
+    Work objwork;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,12 +48,26 @@ public class NewWorkActivity extends AppCompatActivity {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 guardarDatos();
+
             }
         });
     }
 
     public void guardarDatos(){
+        String work;
+        String date;
+        String descripcion;
 
+        work = etTarea.getText().toString();
+        date = etDia.getText().toString() + "/" + etMes.getText().toString() + "/" + etAnio.getText().toString();
+        descripcion = etDesc.getText().toString();
+        /*
+        tarea.add(work);
+        fecha.add(date);
+        desc.add(descripcion);*/
+        objwork = new Work(work,date,descripcion);
     }
+
 }
