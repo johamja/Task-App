@@ -1,4 +1,4 @@
-package com.example.task_app.activities;
+package com.example.task_app.Vistas.Autenticacion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.task_app.R;
+import com.example.task_app.Vistas.Inicio.HomeApp;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

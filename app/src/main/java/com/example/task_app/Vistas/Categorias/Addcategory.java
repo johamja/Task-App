@@ -1,10 +1,9 @@
-package com.example.task_app.activities;
+package com.example.task_app.Vistas.Categorias;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 
 import com.example.task_app.R;
 

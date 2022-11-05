@@ -1,4 +1,4 @@
-package com.example.task_app.activities;
+package com.example.task_app.Vistas.Cuadernos;
 
 import android.os.Bundle;
 
@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.task_app.Class.Cuaderno;
-import com.example.task_app.Class.na_AdapterNotas;
+import com.example.task_app.Modelos.Cuaderno;
+import com.example.task_app.Modelos.na_AdapterNotas;
 import com.example.task_app.R;
 
 import java.util.ArrayList;

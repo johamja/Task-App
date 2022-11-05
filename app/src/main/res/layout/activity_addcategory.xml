@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/Color3"
     android:padding="20dp"
-    tools:context=".activities.Addcategory">
+    tools:context=".Vistas.Categorias.Addcategory">
 
 
     <TextView

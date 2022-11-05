@@ -1,4 +1,4 @@
-package com.example.task_app.activities;
+package com.example.task_app.Vistas.Categorias;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +22,7 @@ public class CategoryList extends AppCompatActivity {
         addCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CategoryList.this,Addcategory.class));
+                startActivity(new Intent(CategoryList.this, Addcategory.class));
             }
         });
     }

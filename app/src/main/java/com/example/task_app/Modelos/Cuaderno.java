@@ -1,7 +1,6 @@
-package com.example.task_app.Class;
+package com.example.task_app.Modelos;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Cuaderno {
     private String ID;

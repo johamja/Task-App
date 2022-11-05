@@ -1,4 +1,4 @@
-package com.example.task_app;
+package com.example.task_app.Vistas.Inicio;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.task_app.activities.HomeApp;
-import com.example.task_app.activities.LogIn;
+import com.example.task_app.Vistas.Autenticacion.LogIn;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

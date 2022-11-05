@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:backgroundTint="#FFFFFF"
     tools:background="#FFFFFF"
-    tools:context=".activities.LogIn"> <!-- Concatenar la clase al layout -->
+    tools:context=".Vistas.Autenticacion.LogIn"> <!-- Concatenar la clase al layout -->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

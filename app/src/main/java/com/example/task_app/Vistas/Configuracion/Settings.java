@@ -1,4 +1,4 @@
-package com.example.task_app.activities;
+package com.example.task_app.Vistas.Configuracion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,10 +9,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.task_app.MainActivity;
 import com.example.task_app.R;
-import com.example.task_app.model.firebase_authentication.Authentication;
-import com.example.task_app.model.firebase_authentication.User;
+import com.example.task_app.Controladores.Almacenamiento.Authentication;
+import com.example.task_app.Controladores.Almacenamiento.User;
+import com.example.task_app.Vistas.Autenticacion.LogIn;
 
 public class Settings extends AppCompatActivity {
 
@@ -33,7 +33,7 @@ public class Settings extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (Authentication.signOut()){
-                    Intent intent = new Intent(Settings.this,LogIn.class);
+                    Intent intent = new Intent(Settings.this, LogIn.class);
                     startActivity(intent);
                     finish();
                 } else {

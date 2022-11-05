@@ -1,17 +1,17 @@
-package com.example.task_app.activities;
+package com.example.task_app.Vistas.Inicio;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.task_app.Vistas.Categorias.CategoryList;
+import com.example.task_app.Vistas.Configuracion.Settings;
 import com.example.task_app.R;
-import com.example.task_app.model.firebase_authentication.User;
+import com.example.task_app.Vistas.Cuadernos.BooksMenu;
 
 public class HomeApp extends AppCompatActivity {
 
@@ -25,11 +25,13 @@ public class HomeApp extends AppCompatActivity {
 
         final Button b_notas = findViewById(R.id.ahp_b_notebooks);
         settings = findViewById(R.id.HomeApp_Button_settings);
+        final Button Categorias = findViewById(R.id.Home_Categorias);
+
 
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeApp.this,Settings.class);
+                Intent intent = new Intent(HomeApp.this, Settings.class);
                 startActivity(intent);
             }
         });
@@ -37,6 +39,14 @@ public class HomeApp extends AppCompatActivity {
         b_notas.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeApp.this, BooksMenu.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        Categorias.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeApp.this, CategoryList.class);
                 startActivity(intent);
                 finish();
             }

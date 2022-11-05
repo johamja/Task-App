@@ -1,4 +1,4 @@
-package com.example.task_app.task;
+package com.example.task_app.Vistas.Tareas;
 
 import androidx.appcompat.app.AppCompatActivity;
 

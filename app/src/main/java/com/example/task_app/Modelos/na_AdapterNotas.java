@@ -1,4 +1,4 @@
-package com.example.task_app.Class;
+package com.example.task_app.Modelos;
 
 import android.view.LayoutInflater;
 import android.view.View;

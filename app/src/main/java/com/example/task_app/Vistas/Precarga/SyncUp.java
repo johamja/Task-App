@@ -1,5 +1,5 @@
 
-package com.example.task_app.activities;
+package com.example.task_app.Vistas.Precarga;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.task_app.R;
+import com.example.task_app.Vistas.Inicio.HomeApp;
 
 public class SyncUp extends AppCompatActivity {
 
