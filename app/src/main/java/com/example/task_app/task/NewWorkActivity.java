@@ -20,10 +20,13 @@ public class NewWorkActivity extends AppCompatActivity {
     EditText etTarea, etDia, etMes, etAnio, etDesc;
     LinearLayout btnGuardar;
     Work objwork;
+    DataBaseWorks dataBaseWorks;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_work);
+
+        dataBaseWorks = new DataBaseWorks(this);
 
         tarea = new ArrayList<String>();
         fecha = new ArrayList<String>();
@@ -63,11 +66,8 @@ public class NewWorkActivity extends AppCompatActivity {
         work = etTarea.getText().toString();
         date = etDia.getText().toString() + "/" + etMes.getText().toString() + "/" + etAnio.getText().toString();
         descripcion = etDesc.getText().toString();
-        /*
-        tarea.add(work);
-        fecha.add(date);
-        desc.add(descripcion);*/
-        objwork = new Work(work,date,descripcion);
+
+        dataBaseWorks.guardarDatos(work, date, descripcion);
     }
 
 }
