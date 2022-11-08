@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FFFFFF"
-    tools:background="#FFFFFF"
     tools:context=".Vistas.Autenticacion.LogIn"> <!-- Concatenar la clase al layout -->
 
     <androidx.constraintlayout.widget.Guideline
@@ -61,6 +59,7 @@
         android:layout_marginStart="@dimen/Loguin_pading"
         android:layout_marginEnd="@dimen/Loguin_pading"
         android:layout_marginBottom="30dp"
+        android:autofillHints=""
         android:backgroundTint="#00FFFFFF"
         android:ems="10"
         android:foreground="@drawable/plain_text_loguin"
@@ -112,10 +111,12 @@
         android:layout_marginStart="@dimen/Loguin_pading"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/Loguin_pading"
+        android:buttonTint="@color/Color_Primario"
         android:text="@string/Loguin_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogIn_EditText_password" />
+        app:layout_constraintTop_toBottomOf="@+id/LogIn_EditText_password"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -133,7 +134,7 @@
         android:layout_marginEnd="@dimen/Loguin_pading"
         android:background="@drawable/boton_loguin"
         android:text="@string/Loguin_5"
-        android:textColor="@color/Color5"
+        android:textColor="@color/Texto_Colores_Botones"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -149,7 +150,7 @@
         android:layout_marginEnd="@dimen/Loguin_pading"
         android:background="@drawable/boton_loguin"
         android:text="@string/action_register"
-        android:textColor="@color/Color5"
+        android:textColor="@color/Texto_Colores_Botones"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

@@ -4,7 +4,7 @@
         <shape
             android:shape="rectangle">
             <stroke
-                android:color="@color/contorno"
+                android:color="@color/Color_Primario"
                 android:width="2dp"/>
             <corners android:radius="@dimen/Botones_loguin"/>
             <solid android:color="#00FFFFFF" />

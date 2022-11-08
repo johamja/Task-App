@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/Color3"
     android:padding="20dp"
     tools:context=".Vistas.Categorias.Addcategory">
 
@@ -16,7 +15,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/titletextview"
         android:text="Añadir nueva categoría"
-        android:textColor="@color/black"
+        android:textColor="@color/Texto_Fondo_Aplicacion"
         android:textSize="25dp"
         android:textStyle="bold"
         android:gravity="center"

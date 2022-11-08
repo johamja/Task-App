@@ -106,7 +106,7 @@
                 android:clickable="true"
                 android:paddingRight="15dp"
                 android:paddingBottom="10dp"
-                app:backgroundTint="@color/Color8"
+                app:backgroundTint="@color/Color_Primario"
                 app:srcCompat="@android:drawable/ic_menu_edit"
                 tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>

@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Notebooks"
-        android:textColor="@color/black"
+        android:textColor="@color/Texto_Fondo_Aplicacion"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="83dp"
         tools:layout_editor_absoluteY="20dp"
