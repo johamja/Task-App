@@ -56,8 +56,8 @@
         </activity>
         <activity
             android:name=".Vistas.Autenticacion.CreateAccount"
-            android:windowSoftInputMode="adjustResize"
-            android:parentActivityName=".Vistas.Autenticacion.LogIn" />
+            android:parentActivityName=".Vistas.Autenticacion.LogIn"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Vistas.Precarga.ChargingScreen"
             android:exported="true">

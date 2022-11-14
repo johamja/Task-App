@@ -19,7 +19,6 @@
     <string name="Login_Toast_1">There was a problem logging in</string>
 
 
-
     <string name="CreateAccount_1">Hi!</string>
     <string name="CreateAccount_2">Create a new account</string>
     <string name="CreateAccount_3">Name</string>
@@ -33,7 +32,6 @@
     <string name="CreateAccount_Error_2">A password is required</string>
     <string name="CreateAccount_Error_3">Accept the privacy policies</string>
     <string name="CreateAccount_Toast_1">There was an error creating the new user</string>
-
 
 
     <string name="app_name">FOrder</string>
