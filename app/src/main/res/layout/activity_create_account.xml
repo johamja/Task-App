@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".Vistas.Autenticacion.CreateAccount">
 
     <TextView
@@ -11,45 +12,40 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="@dimen/Loguin_pading"
-        android:layout_marginBottom="8dp"
-        android:text="@string/Create_Account_5"
-        android:textSize="48sp"
+        android:text="@string/CreateAccount_1"
+        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/Loguin_pading"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/Loguin_pading"
-        android:layout_marginBottom="16dp"
-        android:text="@string/Create_Account_4"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        android:text="@string/CreateAccount_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.16" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/Loguin_pading"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="@dimen/Loguin_pading"
+        android:layout_marginBottom="32dp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline6">
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,8 +67,8 @@
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/Create_Account_1"
-                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
+                    android:text="@string/CreateAccount_3"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -93,7 +89,7 @@
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
                     android:paddingLeft="5dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +102,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/Login_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -115,8 +111,8 @@
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/Create_Account_2"
-                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
+                    android:text="@string/CreateAccount_4"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -137,7 +133,7 @@
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
                     android:paddingLeft="5dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +146,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/Login_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -159,8 +155,8 @@
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/Create_Account_3"
-                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
+                    android:text="@string/CreateAccount_5"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -181,7 +177,7 @@
                     android:inputType="phone"
                     android:minHeight="48dp"
                     android:paddingLeft="5dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -194,7 +190,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/Login_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -203,8 +199,8 @@
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/prompt_email"
-                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
+                    android:text="@string/CreateAccount_6"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -227,7 +223,7 @@
                     android:inputType="textEmailAddress"
                     android:minHeight="48dp"
                     android:paddingLeft="5dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -240,7 +236,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/Login_13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
@@ -249,8 +245,8 @@
                     android:layout_marginEnd="0dp"
                     android:layout_marginRight="0dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/prompt_password"
-                    app:layout_constraintBottom_toTopOf="@+id/LogIn_EditText_email"
+                    android:text="@string/CreateAccount_7"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -272,7 +268,7 @@
                     android:inputType="textPassword"
                     android:minHeight="48dp"
                     android:paddingLeft="5dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintBottom_toTopOf="@+id/Login_6"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -289,35 +285,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/Loguin_3"
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="@color/Color_Primario"
+                    android:text="@string/CreateAccount_8"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/LogIn_EditText_password" />
+                    app:layout_constraintTop_toBottomOf="@+id/Login_7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/CreateAccountcreate_Button_create_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/boton_login"
+                    android:text="@string/CreateAccount_9"
+                    android:textColor="@color/Texto_Colores_Botones" />
             </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
-
-    <Button
-        android:id="@+id/CreateAccountcreate_Button_create_account"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/Loguin_pading"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="@dimen/Loguin_pading"
-        android:background="@drawable/boton_loguin"
-        android:text="@string/action_register"
-        android:textColor="@color/Texto_Colores_Botones"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -65,13 +65,13 @@ public class CreateAccount extends AppCompatActivity {
             String PasswordS = Password.getText().toString();
 
             if (EmailS.isEmpty()) {
-                Email.setError(getString(R.string.Loguin_6));
+                Email.setError(getString(R.string.CreateAccount_Error_1));
                 Email.requestFocus();
             } else if (PasswordS.isEmpty()) {
-                Password.setError(getString(R.string.Loguin_7));
+                Password.setError(getString(R.string.CreateAccount_Error_2));
                 Password.requestFocus();
             } else if (!Privacy_policies.isChecked()) {
-                Privacy_policies.setError(getString(R.string.Loguin_8));
+                Privacy_policies.setError(getString(R.string.CreateAccount_Error_3));
                 Privacy_policies.requestFocus();
             } else {
                 mAuth.createUserWithEmailAndPassword(EmailS, PasswordS).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -86,7 +86,7 @@ public class CreateAccount extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.e(TAGE, "Usuario no creado", task.getException());
-                            Toast.makeText(CreateAccount.this, getString(R.string.Create_Account_6), Toast.LENGTH_LONG).show();
+                            Toast.makeText(CreateAccount.this, getString(R.string.CreateAccount_Toast_1), Toast.LENGTH_LONG).show();
                         }
                     }
                 });

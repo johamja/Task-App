@@ -14,7 +14,7 @@ public class ChargingScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_charging_screen);
+        setContentView(R.layout.activity_preload_screen);
 
         int Tiempo = 1000;
 

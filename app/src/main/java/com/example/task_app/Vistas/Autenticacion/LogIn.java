@@ -29,19 +29,19 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_login);
         Log.v(TAGC, "Iniciando Actividad");
 
 
         // Assigning layout elements to activity variables
         // Asignando elementos del layout a las variables de la actividad
-        final Button Log_in = findViewById(R.id.LogIn_Button_login);
-        final Button Create_Account = findViewById(R.id.LogIn_Button_create_account);
+        final Button Log_in = findViewById(R.id.Login_11);
+        final Button Create_Account = findViewById(R.id.Login_12);
 
 
-        email = findViewById(R.id.LogIn_EditText_email);
-        password = findViewById(R.id.LogIn_EditText_password);
-        privacy_policies = findViewById(R.id.LogIn_CheckBox_privacy_policies);
+        email = findViewById(R.id.Login_5);
+        password = findViewById(R.id.Login_7);
+        privacy_policies = findViewById(R.id.Login_8);
 
 
         // Named Layout Button Action Login
@@ -73,13 +73,13 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
     private void Log_in(String email_s, String password_s) {
         try {
             if (email_s.isEmpty()) {
-                email.setError(getString(R.string.Loguin_6));
+                email.setError(getString(R.string.Login_Error_1));
                 email.requestFocus();
             } else if (password_s.isEmpty()) {
-                password.setError(getString(R.string.Loguin_7));
+                password.setError(getString(R.string.Login_Error_2));
                 password.requestFocus();
             } else if (!privacy_policies.isChecked()) {
-                privacy_policies.setError(getString(R.string.Loguin_8));
+                privacy_policies.setError(getString(R.string.Login_Error_3));
                 privacy_policies.requestFocus();
             } else {
                 Log.w(TAGA, "Iniciando la api de FirebaseAuth");
@@ -95,7 +95,7 @@ public class LogIn extends AppCompatActivity { // implementar el extends para qu
                     } else {
                         Log.i(TAGI, email_s + " ---- " + password_s);
                         Log.e(TAGE, "Inicio de sesión con correo electrónico: error", task.getException());
-                        Toast.makeText(LogIn.this, getString(R.string.Loguin_9), Toast.LENGTH_LONG).show();
+                        Toast.makeText(LogIn.this, getString(R.string.Login_Toast_1), Toast.LENGTH_LONG).show();
                     }
                 });
             }

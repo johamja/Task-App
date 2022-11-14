@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
-                    android:background="@drawable/boton_loguin"
+                    android:background="@drawable/boton_login"
                     android:text="@string/Settings_2"
                     android:textColor="@color/Texto_Colores_Botones" />
             </LinearLayout>
