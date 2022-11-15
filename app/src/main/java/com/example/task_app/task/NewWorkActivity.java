@@ -51,9 +51,7 @@ public class NewWorkActivity extends AppCompatActivity {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 guardarDatos();
-
             }
         });
     }
@@ -68,6 +66,10 @@ public class NewWorkActivity extends AppCompatActivity {
         descripcion = etDesc.getText().toString();
 
         dataBaseWorks.guardarDatos(work, date, descripcion);
+
+        Toast.makeText(this, "La Tarea se ha creado correctamente",Toast.LENGTH_SHORT).show();
+        finish();
     }
+
 
 }

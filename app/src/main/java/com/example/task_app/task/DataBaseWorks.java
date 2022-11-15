@@ -18,7 +18,7 @@ public class DataBaseWorks extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //Lector de Consultas de Nuestra BD, crear una BD
         sqLiteDatabase.execSQL("CREATE TABLE Tarea (" +
-                               "id_tarea INTEGER PRIMARY KEY NOT NULL, "+
+                               "id_tarea INTEGER PRIMARY KEY AUTOINCREMENT, "+
                                 "nombre VARCHAR NOT NULL, "+
                                 "fecha VARCHAR NOT NULL,"+
                                 "descripcion VARCHAR NOT NULL);");
@@ -27,12 +27,13 @@ public class DataBaseWorks extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         //Actualizar una BD
+
     }
 
     public void guardarDatos(String work, String date, String desc){
         getReadableDatabase().execSQL("INSERT IN TO Tarea VALUES ("+null+",'"+work+"','"+date+"','"+desc+"');");
     }
-
+    //obtener las tareas de la base de datos
     public Cursor getTareas(){
         return getReadableDatabase().query("Tarea", null, null, null, null, null, null  );
     }
