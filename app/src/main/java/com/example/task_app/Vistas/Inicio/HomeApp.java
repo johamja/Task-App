@@ -1,6 +1,7 @@
 package com.example.task_app.Vistas.Inicio;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ import com.example.task_app.Vistas.Cuadernos.BooksMenu;
 
 public class HomeApp extends AppCompatActivity {
 
-    private ImageButton settings;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,13 @@ public class HomeApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_app);
 
-        final Button b_notas = findViewById(R.id.ahp_b_notebooks);
-        settings = findViewById(R.id.HomeApp_Button_settings);
-        final Button Categorias = findViewById(R.id.Home_Categorias);
+        final CardView Cuadernos = findViewById(R.id.cardView3);
+        final CardView Categorias = findViewById(R.id.cardView2);
+        final ImageButton Configuracion = findViewById(R.id.imageButton5);
 
 
-        settings.setOnClickListener(new View.OnClickListener() {
+
+        Configuracion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeApp.this, Settings.class);
@@ -36,11 +38,10 @@ public class HomeApp extends AppCompatActivity {
             }
         });
 
-        b_notas.setOnClickListener(new View.OnClickListener() {
+        Cuadernos.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeApp.this, BooksMenu.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -48,7 +49,6 @@ public class HomeApp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeApp.this, CategoryList.class);
                 startActivity(intent);
-                finish();
             }
         });
     }

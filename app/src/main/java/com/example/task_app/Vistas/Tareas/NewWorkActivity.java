@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.task_app.Modelos.Work;
 import com.example.task_app.R;
 
 import java.util.ArrayList;

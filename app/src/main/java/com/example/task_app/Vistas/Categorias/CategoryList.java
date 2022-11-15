@@ -14,7 +14,7 @@ public class CategoryList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories);
+        setContentView(R.layout.list_categories);
 
         FloatingActionButton addCategory = findViewById(R.id.Categories_6);
 

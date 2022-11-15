@@ -14,7 +14,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class AllWorksActivity extends AppCompatActivity {
+public class Tasks extends AppCompatActivity {
     FloatingActionButton btn_newtask;
     ListView listWorks;
     ArrayAdapter<String> adapter;
@@ -24,7 +24,7 @@ public class AllWorksActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_all_works);
+        setContentView(R.layout.list_task);
 
         nombre_tareas = new ArrayList<String>();
         if (getIntent().getSerializableExtra("tareas_arreglo") == null){
@@ -33,7 +33,7 @@ public class AllWorksActivity extends AppCompatActivity {
         else {
             nombre_tareas = (ArrayList<String>) getIntent().getSerializableExtra("tareas_arreglo");
         }
-        btn_newtask = (FloatingActionButton) findViewById(R.id.btn_newtask);
+        btn_newtask = (FloatingActionButton) findViewById(R.id.floatingActionButton2);
         btn_newtask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +41,8 @@ public class AllWorksActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        listWorks = (ListView) findViewById(R.id.list_works);
+        /**
+        listWorks = (ListView) findViewById(R.id.);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nombre_tareas);
         back = (ImageView) findViewById(R.id.back_anw);
         back.setOnClickListener(new View.OnClickListener() {
@@ -51,5 +52,6 @@ public class AllWorksActivity extends AppCompatActivity {
             }
         });
         listWorks.setAdapter(adapter);
+         */
     }
 }

@@ -1,4 +1,4 @@
-package com.example.task_app.Vistas.Tareas;
+package com.example.task_app.Modelos;
 
 public class Work {
    private String nombre;
