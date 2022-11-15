@@ -10,12 +10,13 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.task_app.R;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 public class Tasks extends AppCompatActivity {
-    FloatingActionButton btn_newtask;
+    FloatingActionButton AñadirCategoria;
     ListView listWorks;
     ArrayAdapter<String> adapter;
     ArrayList<String> nombre_tareas;
@@ -26,15 +27,17 @@ public class Tasks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_task);
 
+        AñadirCategoria = findViewById(R.id.floatingActionButton2);
+
         nombre_tareas = new ArrayList<String>();
         if (getIntent().getSerializableExtra("tareas_arreglo") == null){
             nombre_tareas.add("No hay tareas disponibles");
         }
         else {
             nombre_tareas = (ArrayList<String>) getIntent().getSerializableExtra("tareas_arreglo");
-        }
-        btn_newtask = (FloatingActionButton) findViewById(R.id.floatingActionButton2);
-        btn_newtask.setOnClickListener(new View.OnClickListener() {
+        };
+
+        AñadirCategoria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), NewWorkActivity.class);

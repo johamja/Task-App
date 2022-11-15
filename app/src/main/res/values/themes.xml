@@ -17,4 +17,12 @@
     <color name="Color_Secundario">@color/Color6_Light</color>
     <color name="Color_Terciario">@color/Color7_Light</color>
     <color name="Color_Cuaternario">@color/Color8_Light</color>
+    
+    <style name="BottomSheetDialoTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 </resources>
