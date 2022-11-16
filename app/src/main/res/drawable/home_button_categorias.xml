@@ -3,14 +3,14 @@
     <item android:state_pressed="false">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/Radio_Botones_Home_App"/>
-            <solid android:color="@color/Color7"/>
+            <solid android:color="@color/Color_Primario"/>
         </shape>
 
     </item>
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/Radio_Botones_Home_App"/>
-            <solid android:color="@color/Color2"/>
+            <solid android:color="@color/Color_Primario"/>
         </shape>
     </item>
 </selector>

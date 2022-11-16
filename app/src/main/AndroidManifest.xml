@@ -12,48 +12,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskApp"
         tools:targetApi="31">
+
         <activity
-            android:name=".Category"
+            android:name=".Vistas.Cuadernos.BooksMenu"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".task.NewWorkActivity"
-            android:exported="false" />
-        <activity
-            android:name=".task.WorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".task.AllWorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.Settings"
+            android:name=".Vistas.Configuracion.Settings"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.HomeApp"
+            android:name=".Vistas.Categorias.CategoryList"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.SyncUp"
+            android:name=".Vistas.Inicio.HomeApp"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.CreateAccount"
-            android:parentActivityName=".activities.LogIn" />
+            android:name=".Vistas.Precarga.SyncUp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".activities.ChargingScreen"
+            android:name=".Vistas.Autenticacion.CreateAccount"
+            android:parentActivityName=".Vistas.Autenticacion.LogIn"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Vistas.Precarga.ChargingScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,10 +62,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Vistas.Inicio.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.LogIn"
+            android:name=".Vistas.Autenticacion.LogIn"
             android:exported="true"
             android:label="@string/title_activity_login" />
     </application>

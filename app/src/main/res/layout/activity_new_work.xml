@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".task.NewWorkActivity">
+    tools:context=".Vistas.Tareas.NewWorkActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -164,7 +164,7 @@
                     android:layout_marginTop="25dp"
                     android:layout_marginRight="45dp"
                     android:layout_marginBottom="25dp"
-                    android:background="@drawable/boton_loguin"
+                    android:background="@drawable/boton_login"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -173,7 +173,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Guardar"
-                        android:textColor="@color/white"
+                        android:textColor="@color/Texto_Fondo_Aplicacion"
                         android:textSize="34sp" />
                 </LinearLayout>
             </LinearLayout>
