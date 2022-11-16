@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dialog"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="20dp"
-    app:cardBackgroundColor="@color/Fondo_Aplicacion">
+    app:cardBackgroundColor="@color/Fondo_Aplicacion"
+    app:cardCornerRadius="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/bottom_sheet_edit_category_1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -28,7 +30,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/bottom_sheet_edit_category_2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -46,10 +48,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_edit_category_1" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/bottom_sheet_edit_category_3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -58,11 +60,12 @@
             android:text="Color"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_edit_category_2" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/bottom_sheet_edit_category_4"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"
@@ -72,24 +75,45 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_edit_category_3" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/bottom_sheet_edit_category_5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="70dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="32dp"
-            android:background="@drawable/boton_login"
-            android:text="Añadir"
+            android:background="@drawable/boton_semiredondo"
+            android:backgroundTint="@color/Color_Primario"
+            android:text="Canselar"
+            android:textColor="@color/Texto_Colores_Botones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_edit_category_6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_edit_category_4" />
+
+        <Button
+            android:id="@+id/bottom_sheet_edit_category_6"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/boton_semiredondo"
+            android:backgroundTint="@color/Color_Cuaternario"
+            android:text="Confirmar"
             android:textColor="@color/Texto_Colores_Botones"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bottom_sheet_edit_category_5"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_edit_category_4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
