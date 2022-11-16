@@ -16,6 +16,8 @@
     <color name="Color_Secundario">@color/Color6_Dark</color>
     <color name="Color_Terciario">@color/Color7_Dark</color>
     <color name="Color_Cuaternario">@color/Color8_Dark</color>
+    <color name="Editar">@color/Color9_Light</color>
+    <color name="Eliminar">@color/Color10_Light</color>
 
     <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowIsFloating">false</item>

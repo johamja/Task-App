@@ -10,6 +10,9 @@
     <color name="Color6_Light">#0B7CDA</color>
     <color name="Color7_Light">#0FBCCB</color>
     <color name="Color8_Light">#4CDDA8</color>
+    <color name="Color9_Light">#B9E28C</color>
+    <color name="Color10_Light">#DB504A</color>
+
 
     <!-- Paleta de colores theme Dark -->
     <color name="Color1_Dark">#202125</color>
@@ -20,4 +23,7 @@
     <color name="Color6_Dark">#507AD9</color>
     <color name="Color7_Dark">#15C6C4</color>
     <color name="Color8_Dark">#4CD7AE</color>
+    <color name="Color9_Dark">#A8CE80</color>
+    <color name="Color10_Dark">#C64844</color>
+
 </resources>
