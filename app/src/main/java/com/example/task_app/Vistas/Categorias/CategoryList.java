@@ -25,6 +25,8 @@ import com.example.task_app.Vistas.Categorias.Adapter.AdapterCategory;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator;
 
 public class CategoryList extends AppCompatActivity {
@@ -105,7 +107,7 @@ public class CategoryList extends AppCompatActivity {
         public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
             new RecyclerViewSwipeDecorator.Builder(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
                     .addCornerRadius(1, 10)
-                    .addBackgroundColor(ContextCompat.getColor(CategoryList.this, R.color.Color_Cuaternario))
+                    .addBackgroundColor(ContextCompat .getColor(CategoryList.this, R.color.Color_Cuaternario))
                     .addActionIcon(R.drawable.ic_baseline_edit_24)
                     .create()
                     .decorate();
@@ -138,7 +140,7 @@ public class CategoryList extends AppCompatActivity {
             if (nombre.getText().toString().isEmpty()) {
                 BottomShetAñadir.dismiss();
             } else {
-                ListItemsCategorys.listCategorias.add(new Categories(nombre.getText().toString(), spinner.getSelectedItemPosition() + 1));
+                ListItemsCategorys.listCategorias.add(new Categories(nombre.getText().toString(), spinner.getSelectedItemPosition() + 1,new ArrayList<>()));
                 Lista.getAdapter().notifyDataSetChanged();
                 BottomShetAñadir.dismiss();
             }

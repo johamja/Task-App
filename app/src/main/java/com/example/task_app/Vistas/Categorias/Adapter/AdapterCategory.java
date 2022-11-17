@@ -1,6 +1,8 @@
 package com.example.task_app.Vistas.Categorias.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +16,10 @@ import com.example.task_app.Modelos.Categories;
 import com.example.task_app.R;
 import com.example.task_app.Vistas.Categorias.CategoryList;
 import com.example.task_app.Vistas.Categorias.ListItemsCategorys;
+import com.example.task_app.Vistas.Tareas.TaskList;
 
 
+import java.io.Serializable;
 import java.util.List;
 
 
@@ -35,8 +39,8 @@ public class AdapterCategory extends RecyclerView.Adapter<ViewHolderCategory> {
     @NonNull
     @Override
     public ViewHolderCategory onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater layoutItemCategorie = LayoutInflater.from(parent.getContext());
-        return new ViewHolderCategory(layoutItemCategorie.inflate(R.layout.item_category, parent, false));
+        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        return new ViewHolderCategory(layoutInflater.inflate(R.layout.item_category, parent, false));
     }
 
     /**
@@ -45,12 +49,12 @@ public class AdapterCategory extends RecyclerView.Adapter<ViewHolderCategory> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolderCategory holder, int position) {
         holder.Render(context,list.get(position));
-        holder.itemView.findViewById(R.id.item_category_1).setOnLongClickListener(new View.OnLongClickListener() {
+        holder.itemView.findViewById(R.id.item_category_1).setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onLongClick(View view) {
-                list.remove(position);
-                notifyDataSetChanged();
-                return false;
+            public void onClick(View view) {
+                Intent intent = new Intent(context, TaskList.class);
+                intent.putExtra("Categoria",position);
+                context.startActivity(intent);
             }
         });
     }

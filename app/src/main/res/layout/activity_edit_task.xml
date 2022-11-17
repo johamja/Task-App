@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.Tareas.EditTask">
+
+    <ImageButton
+        android:id="@+id/activity_edit_task_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/activity_edit_task_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/activity_edit_task_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Tarea"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/activity_edit_task_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/activity_edit_task_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <TextView
+        android:id="@+id/activity_edit_task_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:text="Nombre de la tarea"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/activity_edit_task_3" />
+
+    <EditText
+        android:id="@+id/activity_edit_task_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_semiredondo"
+        android:backgroundTint="#E9E9E9"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_edit_task_4"
+        app:layout_constraintStart_toStartOf="@+id/activity_edit_task_4"
+        app:layout_constraintTop_toBottomOf="@+id/activity_edit_task_4" />
+
+    <TextView
+        android:id="@+id/activity_edit_task_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Descripcion "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activity_edit_task_4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/activity_edit_task_4"
+        app:layout_constraintTop_toBottomOf="@+id/activity_edit_task_5" />
+
+    <EditText
+        android:id="@+id/activity_edit_task_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_semiredondo"
+        android:backgroundTint="#E9E9E9"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="10dp"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="@+id/activity_edit_task_4"
+        app:layout_constraintStart_toStartOf="@+id/activity_edit_task_4"
+        app:layout_constraintTop_toBottomOf="@+id/activity_edit_task_6" />
+
+    <TextView
+        android:id="@+id/activity_edit_task_8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Fecha de vencimiento"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activity_edit_task_4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/activity_edit_task_4"
+        app:layout_constraintTop_toBottomOf="@+id/activity_edit_task_7" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/home_button_categorias"
+        app:layout_constraintEnd_toEndOf="@+id/activity_edit_task_4"
+        app:layout_constraintStart_toStartOf="@+id/activity_edit_task_4"
+        app:layout_constraintTop_toBottomOf="@+id/activity_edit_task_8">
+
+        <TextView
+            android:id="@+id/activity_edit_task_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            android:textColor="@color/Texto_Colores_Botones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/activity_edit_task_10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/activity_edit_task_10"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/boton_semiredondo"
+            android:backgroundTint="@color/Color_Cuaternario"
+            android:text="Fecha"
+            android:textColor="@color/Texto_Colores_Botones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioButton
+        android:id="@+id/activity_edit_task_11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:buttonTint="@color/Color_Primario"
+        android:text="Agregar a favoritos"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activity_edit_task_4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/activity_edit_task_4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/activity_edit_task_12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="@color/Color_Primario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/activity_edit_task_13"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/boton_semiredondo"
+            android:backgroundTint="@color/Color_Cuaternario"
+            android:text="Guardar"
+            android:textColor="@color/Texto_Colores_Botones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_edit_task_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="Fecha de modificacion"
+            android:textColor="@color/Texto_Colores_Botones"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/activity_edit_task_12" />
+
+        <TextView
+            android:id="@+id/activity_edit_task_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="11/02/2022"
+            android:textColor="@color/Texto_Colores_Botones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/activity_edit_task_13"
+            app:layout_constraintStart_toEndOf="@+id/activity_edit_task_14"
+            app:layout_constraintTop_toTopOf="@+id/activity_edit_task_12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
