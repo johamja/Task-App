@@ -89,7 +89,7 @@
             android:layout_marginBottom="32dp"
             android:background="@drawable/boton_semiredondo"
             android:backgroundTint="@color/Color_Primario"
-            android:text="Canselar"
+            android:text="cancelar"
             android:textColor="@color/Texto_Colores_Botones"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_edit_category_6"

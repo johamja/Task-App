@@ -1,6 +1,8 @@
 package com.example.task_app.Vistas.Tareas.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.task_app.Modelos.Categories;
 import com.example.task_app.Modelos.Task;
 import com.example.task_app.R;
+import com.example.task_app.Vistas.Tareas.DisplayTask;
 
 import java.util.List;
 
@@ -39,7 +42,9 @@ public class AdapterTask extends RecyclerView.Adapter<ViewHolderTask> {
         holder.itemView.findViewById(R.id.item_task_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context,"Hola",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context,"Hola",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, DisplayTask.class);
+                context.startActivity(intent);
             }
         });
     }
