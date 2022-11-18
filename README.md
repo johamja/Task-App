@@ -74,4 +74,4 @@ Plataforma [DevOps](https://dev.azure.com/)
 [Diagrama de clases UML](https://upbeduco-my.sharepoint.com/:u:/g/personal/jaider_morales_upb_edu_co/ESMg2HWuY-FJur_SpF_CxewBfchtsDJEVdGVn15lfL2dsg?e=8U1l0x)
 
 # Diseños
-[Figma interfaz grafica del proyecto](https://www.figma.com/file/N5OxmMcwmWnkzwLbpRvmMH/Untitled?node-id=2%3A65)
+[Figma interfaz grafica del proyecto](https://www.figma.com/file/HrUMLi8lS11Dtx8Luta0Ra/Proyecto-paralelo?node-id=0%3A1)
