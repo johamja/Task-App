@@ -37,7 +37,7 @@ public class BooksMenu extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        na_AdapterCuadernos adaptador = new na_AdapterCuadernos(listcuadernos);
+        na_AdapterCuadernos adaptador = new na_AdapterCuadernos(this,listcuadernos);
         recyclercuadernos.setAdapter(adaptador);
 
         adaptador.setOnClickListener(new View.OnClickListener() {
@@ -69,7 +69,11 @@ public class BooksMenu extends AppCompatActivity {
         listadenotas2.add(new Nota("Nota B del cuaderno 2",4));
         listcuadernos.add(new Cuaderno("Cuaderno1","Este es el cuaderno 1 jijija",2,listadenotas1));
         listcuadernos.add(new Cuaderno("Cuaderno2","Este es el cuaderno 2 jijija",5,listadenotas2));
-        listcuadernos.add(new Cuaderno("Cuaderno3","Este es el cuaderno 3 jijija",6,new ArrayList<>()));
+        listcuadernos.add(new Cuaderno("Cuaderno3","Este es el cuaderno 3 jijija",3,new ArrayList<>()));
+        listcuadernos.add(new Cuaderno("Cuaderno tareas 4","Este es el cuaderno 4 jijija",1,new ArrayList<>()));
+        listcuadernos.add(new Cuaderno("Cuaderno deudores 5","Los que me deben billullo",4,new ArrayList<>()));
+        listcuadernos.add(new Cuaderno("No se como llamar este cuaderno","No se como llamarlo, ahora voy a saber que poner aqui apue",3,new ArrayList<>()));
+        listcuadernos.add(new Cuaderno("Calculo integral","Ps es de calculo integral",5,new ArrayList<>()));
     }
 
     private void FinalizarActivity() {
