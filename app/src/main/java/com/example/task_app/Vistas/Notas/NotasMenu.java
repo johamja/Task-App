@@ -1,11 +1,15 @@
 package com.example.task_app.Vistas.Notas;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,12 +18,15 @@ import com.example.task_app.Modelos.Cuaderno;
 import com.example.task_app.Modelos.Nota;
 import com.example.task_app.Modelos.na_AdapterNotas;
 import com.example.task_app.R;
+import com.example.task_app.Vistas.Categorias.CategoryList;
 
 import java.util.ArrayList;
 
+import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator;
+
 public class NotasMenu extends AppCompatActivity {
 
-    ArrayList<Nota> listnotas = new ArrayList<>();
+    public ArrayList<Nota> listnotas = new ArrayList<>();
     RecyclerView recycler;
     TextView title,cantnotas,descripcion;
     ImageView bck,menu;
@@ -58,6 +65,9 @@ public class NotasMenu extends AppCompatActivity {
         recycler.setLayoutManager(new LinearLayoutManager(this));
 
 
+        // editar una nota
+        new ItemTouchHelper(EditarNota).attachToRecyclerView(recycler);
+
         //Toast.makeText(getApplicationContext(), String.valueOf(cuaderno.getListadenotas().isEmpty()), Toast.LENGTH_SHORT).show();
         na_AdapterNotas adaptador = new na_AdapterNotas(this,listnotas);
         recycler.setAdapter(adaptador);
@@ -65,9 +75,36 @@ public class NotasMenu extends AppCompatActivity {
         //Salir
         bck = findViewById(R.id.nm_backbutton);
         bck.setOnClickListener(view -> FinalizarActivity());
-
-
     }
+
+    ItemTouchHelper.SimpleCallback EditarNota = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
+        @Override
+        public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+            return false;
+        }
+
+        @Override
+        public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+            Nota nota = listnotas.get(viewHolder.getAbsoluteAdapterPosition());
+            Intent intent = new Intent(NotasMenu.this,nota_edit.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("nota",nota);
+            intent.putExtras(bundle);
+            startActivity(intent);
+            recycler.getAdapter().notifyDataSetChanged();
+        }
+
+        @Override
+        public void onChildDraw(@NonNull Canvas c, @NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+            new RecyclerViewSwipeDecorator.Builder(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
+                    .addCornerRadius(1, 10)
+                    .addBackgroundColor(ContextCompat.getColor(NotasMenu.this, R.color.Color_Cuaternario))
+                    .addActionIcon(R.drawable.ic_baseline_edit_24)
+                    .create()
+                    .decorate();
+            super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
+        }
+    };
 
     private void FinalizarActivity() {
         finish();

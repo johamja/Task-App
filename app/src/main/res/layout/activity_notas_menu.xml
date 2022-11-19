@@ -10,8 +10,8 @@
         android:id="@+id/bn_cardView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/notes_bottomradius"
         app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
