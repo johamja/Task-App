@@ -3,54 +3,69 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <FrameLayout
-        android:layout_width="391dp"
-        android:layout_height="91dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="102dp"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/Color2_Light"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/an_tema"
-            android:layout_width="20dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/rounded_corner"
-            android:backgroundTint="@color/Color_Primario"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="352dp"
-            android:layout_height="69dp"
-            android:layout_gravity="right|center"
-            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/an_tema"
+                android:layout_width="15dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/Color_Primario"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/an_fecha"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="5dp"
                 android:text="2022-7-10"
-                android:textColor="#CD959595" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
+                android:textColor="#CD959595"
+                app:layout_constraintBottom_toTopOf="@+id/an_textos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/an_textos"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus, eget lobortis proin vehicula aptent gravida libero, integer nisi ad magna lacus natoque ligula. Tempus bibendum dapibus dui cum commodo aenean nisi eros platea mi felis, interdum phasellus molestie hendrerit faucibus volutpat placerat fermentum inceptos senectus, purus ante curabitur congue tempor fringilla praesent magna maecenas justo. Interdum curae bibendum vestibulum sapien posuere non sodales lectus netus tincidunt purus, habitasse dui vel volutpat ornare felis nascetur hendrerit ante natoque cubilia neque, malesuada dis ultrices semper aliquam inceptos pellentesque vivamus donec fames." />
-        </LinearLayout>
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus, eget lobortis proin vehicula aptent gravida libero, integer nisi ad magna lacus natoque ligula. Tempus bibendum dapibus dui cum commodo aenean nisi eros platea mi felis, interdum phasellus molestie hendrerit faucibus volutpat placerat fermentum inceptos senectus, purus ante curabitur congue tempor fringilla praesent magna maecenas justo. Interdum curae bibendum vestibulum sapien posuere non sodales lectus netus tincidunt purus, habitasse dui vel volutpat ornare felis nascetur hendrerit ante natoque cubilia neque, malesuada dis ultrices semper aliquam inceptos pellentesque vivamus donec fames."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

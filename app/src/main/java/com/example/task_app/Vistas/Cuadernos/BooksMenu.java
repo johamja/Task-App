@@ -73,7 +73,7 @@ public class BooksMenu extends AppCompatActivity {
         listcuadernos.add(new Cuaderno("Cuaderno tareas 4","Este es el cuaderno 4 jijija",1,new ArrayList<>()));
         listcuadernos.add(new Cuaderno("Cuaderno deudores 5","Los que me deben billullo",4,new ArrayList<>()));
         listcuadernos.add(new Cuaderno("No se como llamar este cuaderno","No se como llamarlo, ahora voy a saber que poner aqui apue",3,new ArrayList<>()));
-        listcuadernos.add(new Cuaderno("Calculo integral","Ps es de calculo integral",5,new ArrayList<>()));
+        listcuadernos.add(new Cuaderno("Calculo integral","Ps es de calculo integral\n\n\n\n\n\n\n",5,new ArrayList<>()));
     }
 
     private void FinalizarActivity() {
