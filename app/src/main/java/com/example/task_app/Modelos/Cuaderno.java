@@ -1,8 +1,11 @@
 package com.example.task_app.Modelos;
 
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Cuaderno {
+public class Cuaderno implements Serializable {
+
     private String ID;
     private String nombre;
     private String descripcion;
@@ -24,10 +27,11 @@ public class Cuaderno {
         setListadenotas(lista);
     }
     //Constructor de prueba
-    public Cuaderno(String nombre, String descripcion, int tema) throws Exception {
+    public Cuaderno(String nombre, String descripcion, int tema, ArrayList<Nota> notas) throws Exception {
         setNombre(nombre);
         setDescripcion(descripcion);
         setTema(tema);
+        setListadenotas(notas);
     }
 
     //Metodos

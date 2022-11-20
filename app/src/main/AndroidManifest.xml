@@ -13,6 +13,7 @@
         android:theme="@style/Theme.TaskApp"
         tools:targetApi="31">
         <activity
+            android:name=".Vistas.Notas.nota_edit"
             android:name=".Vistas.Tareas.DisplayTask"
             android:exported="false">
             <meta-data
@@ -20,6 +21,8 @@
                 android:value="" />
         </activity>
         <activity
+
+            android:name=".Vistas.Notas.NotasMenu"
             android:name=".Vistas.Tareas.AddTask"
             android:exported="false">
             <meta-data
@@ -27,6 +30,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Vistas.Cuadernos.BooksMenu"
             android:name=".Vistas.Tareas.EditTask"
             android:exported="false">
             <meta-data
