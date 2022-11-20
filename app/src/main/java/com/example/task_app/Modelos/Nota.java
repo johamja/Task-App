@@ -14,17 +14,20 @@ public class Nota implements Comparable, Serializable {
     private Date fecha_modificacion;
 
     //Constructores
+
     public Nota(String id, int tema, String texto, Date fecha_creacion) throws Exception {
         setID(id);
         setTema(tema);
         setFecha_creacion(fecha_creacion);
     }
+
     public Nota(String id, int tema, String texto, Date fecha_creacion, Date fecha_modificacion) throws Exception {
         setID(id);
         setTema(tema);
         setFecha_creacion(fecha_creacion);
         setFecha_modificacion(fecha_modificacion);
     }
+
 
     //Constructor de prueba
     public Nota(String texto,int tema) throws Exception {
@@ -38,7 +41,9 @@ public class Nota implements Comparable, Serializable {
         //? LLamar a estatico del cuaderno contenedor??
     }
 
+
     public void Modificar_tema(int tema) throws Exception {
+
         setTema(tema);
     }
     public void Modificar_Fmodificacion(Date fecha) throws Exception {
@@ -52,6 +57,7 @@ public class Nota implements Comparable, Serializable {
     public String getID() {
         return ID;
     }
+
     public int getTema() {
         return tema;
     }
@@ -87,6 +93,7 @@ public class Nota implements Comparable, Serializable {
         if(fecha_modificacion.compareTo(fecha_creacion)>=0) this.fecha_modificacion = fecha_modificacion;
         else throw new Exception("La fecha de modificacion no puede ser menor a la fecha de creacion.");
          */
+
     }
 
 

@@ -1,5 +1,6 @@
 package com.example.task_app.Modelos;
 
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.task_app.R;
@@ -35,6 +37,7 @@ public class na_AdapterNotas extends RecyclerView.Adapter<na_AdapterNotas.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull na_AdapterNotas.ViewHolderNotas holder, int position) {
+
         holder.texto.setText(listnotas.get(position).getTexto());
         holder.fecha.setText(listnotas.get(position).getFecha_modificacion().toString());
         int color = 0;
@@ -67,6 +70,7 @@ public class na_AdapterNotas extends RecyclerView.Adapter<na_AdapterNotas.ViewHo
             texto = itemView.findViewById(R.id.an_textos);
             fecha = itemView.findViewById(R.id.an_fecha);
             tema = itemView.findViewById(R.id.an_tema);
+
         }
     }
 }

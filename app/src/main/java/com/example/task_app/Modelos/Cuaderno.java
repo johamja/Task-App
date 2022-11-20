@@ -1,9 +1,11 @@
 package com.example.task_app.Modelos;
 
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Cuaderno implements Serializable {
+
     private String ID;
     private String nombre;
     private String descripcion;

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageButton
         android:id="@+id/bm_backbutton"
         android:layout_width="40dp"
@@ -46,6 +47,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="50dp" />
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/an_recyclerid"
         android:layout_width="0dp"
@@ -61,6 +63,7 @@
         app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/ab_item_list" />
 
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/bm_plusbutton"
         android:layout_width="wrap_content"
@@ -72,5 +75,6 @@
         app:backgroundTint="@color/Color_Primario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
