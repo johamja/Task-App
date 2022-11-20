@@ -13,8 +13,8 @@
         android:theme="@style/Theme.TaskApp"
         tools:targetApi="31">
         <activity
+
             android:name=".Vistas.Notas.nota_edit"
-            android:name=".Vistas.Tareas.DisplayTask"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -22,15 +22,42 @@
         </activity>
         <activity
 
+            android:name=".Vistas.Tareas.DisplayTask"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+
+
             android:name=".Vistas.Notas.NotasMenu"
-            android:name=".Vistas.Tareas.AddTask"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+
+
+            android:name=".Vistas.Tareas.AddTask"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+
             android:name=".Vistas.Cuadernos.BooksMenu"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+
             android:name=".Vistas.Tareas.EditTask"
             android:exported="false">
             <meta-data
@@ -39,13 +66,6 @@
         </activity>
         <activity
             android:name=".Vistas.Tareas.TaskList"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Vistas.Cuadernos.BooksMenu"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

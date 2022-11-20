@@ -27,7 +27,7 @@ public class Tasks extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_task);
 
-        AñadirCategoria = findViewById(R.id.floatingActionButton2);
+        AñadirCategoria = findViewById(R.id.list_task_9);
 
         nombre_tareas = new ArrayList<String>();
         if (getIntent().getSerializableExtra("tareas_arreglo") == null){
@@ -40,7 +40,7 @@ public class Tasks extends AppCompatActivity {
         AñadirCategoria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), NewWorkActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AddTask.class);
                 startActivity(intent);
             }
         });
