@@ -4,7 +4,6 @@ Aplicación de ingeniería de software
 Iniciar git en la carpeta que se desea guradar el proyecto
 ``` bash
 git init
-Hola
 ```
 Añadir el repositorio a la carpeta
 ``` bash

@@ -1,31 +1,50 @@
 <resources>
+
+    <string name="Preload_Screen_1">FOrder</string>
+    <string name="Preload_Screen_2">Notes and tasks in one place</string>
+
+    <string name="Login_1">Welcome</string>
+    <string name="Login_2">It is a pleasure to have you in our application</string>
+    <string name="Login_3">Mail</string>
+    <string name="Login_4">Password</string>
+    <string name="Login_5">Accept all privacy policies</string>
+    <string name="Login_6">Do not you remember your password?</string>
+    <string name="Login_7">log in</string>
+    <string name="Login_8">Create Account</string>
+    <string name="Login_9">Everything at your fingertips</string>
+    <string name="Login_10">"FOrder 2022 v1.0 "</string>
+    <string name="Login_Error_1">Email is required</string>
+    <string name="Login_Error_2">A password is required</string>
+    <string name="Login_Error_3">Accept the privacy policies</string>
+    <string name="Login_Toast_1">There was a problem logging in</string>
+
+
+    <string name="CreateAccount_1">Hi!</string>
+    <string name="CreateAccount_2">Create a new account</string>
+    <string name="CreateAccount_3">Name</string>
+    <string name="CreateAccount_4">Last name</string>
+    <string name="CreateAccount_5">Phone</string>
+    <string name="CreateAccount_6">Mail</string>
+    <string name="CreateAccount_7">Password</string>
+    <string name="CreateAccount_8">Accept all privacy policies</string>
+    <string name="CreateAccount_9">Create Account</string>
+    <string name="CreateAccount_Error_1">Email is required</string>
+    <string name="CreateAccount_Error_2">A password is required</string>
+    <string name="CreateAccount_Error_3">Accept the privacy policies</string>
+    <string name="CreateAccount_Toast_1">There was an error creating the new user</string>
+
+
     <string name="app_name">FOrder</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_register">Create Account</string>
-    <string name="Loguin_5">Log in</string>
     <string name="welcome">Welcome!</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="Loguin_1">Sign in to continue</string>
-    <string name="Loguin_2">Forgot password?</string>
-    <string name="Loguin_3">Accept all privacy policies</string>
-    <string name="Loguin_4">FOrder 2022 v1.0</string>
-    <string name="Create_Account_1">Name</string>
-    <string name="Create_Account_2">Surname</string>
-    <string name="Create_Account_3">Phone</string>
-    <string name="Create_Account_4">Create a new account</string>
-    <string name="Create_Account_5">Hi!</string>
     <string name="Home_App_1">Notebooks</string>
     <string name="Home_App_2">Categorías</string>
     <string name="Home_App_3">Fast notes</string>
     <string name="Home_App_4">Private notes</string>
     <string name="greeting">Hi!</string>
-    <string name="Loguin_6">An email is required</string>
-    <string name="Loguin_7">A password is required</string>
-    <string name="Loguin_8">Accept the terms and conditions of FOlder</string>
-    <string name="Loguin_9">Authentication failure</string>
-    <string name="Create_Account_6">Error creating user</string>
+    <string name="Settings_1">Settings</string>
+    <string name="Settings_2">Sign off</string>
 </resources>

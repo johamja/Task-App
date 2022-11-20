@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="contorno">#707070</color>
+
+    <!-- Paleta de colores theme Light -->
+    <color name="Color1_Light">#FFFFFF</color>
+    <color name="Color2_Light">#F9F9F9</color>
+    <color name="Color3_Light">#202125</color>
+    <color name="Color4_Light">#FFFFFF</color>
+    <color name="Color5_Light">#0C4B86</color>
+    <color name="Color6_Light">#0B7CDA</color>
+    <color name="Color7_Light">#0FBCCB</color>
+    <color name="Color8_Light">#4CDDA8</color>
+    <color name="Color9_Light">#B9E28C</color>
+    <color name="Color10_Light">#DB504A</color>
 
 
-    <!-- Paleta de colores -->
-    <color name="Color1">#7FBCD3</color>
-    <color name="Color2">#ADDADC</color>
-    <color name="Color3">#E4F1E8</color>
-    <color name="Color4">#FFEEAF</color>
-    <color name="Color5">#FFFFFF</color>
-    <color name="Color6">#F66955</color>
-    <color name="Color7">#F5CD54</color>
-    <color name="Color8">#5BA19C</color>
-    <color name="Color9">#8084CC</color>
-
+    <!-- Paleta de colores theme Dark -->
+    <color name="Color1_Dark">#202125</color>
+    <color name="Color2_Dark">#2A2B30</color>
+    <color name="Color3_Dark">#FFFFFF</color>
+    <color name="Color4_Dark">#FFFFFF</color>
+    <color name="Color5_Dark">#3D51C9</color>
+    <color name="Color6_Dark">#507AD9</color>
+    <color name="Color7_Dark">#15C6C4</color>
+    <color name="Color8_Dark">#4CD7AE</color>
+    <color name="Color9_Dark">#A8CE80</color>
+    <color name="Color10_Dark">#C64844</color>
 
 </resources>

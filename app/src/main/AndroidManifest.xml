@@ -13,56 +13,98 @@
         android:theme="@style/Theme.TaskApp"
         tools:targetApi="31">
         <activity
-            android:name=".Category"
+
+            android:name=".Vistas.Notas.nota_edit"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Categorias"
+
+            android:name=".Vistas.Tareas.DisplayTask"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
 
-            android:name=".MainActivityWork"
-            android:exported="false" />
         <activity
-            android:name=".NewWorkActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".WorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AllWorksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".category"
-            android:exported="false" />
-        <activity
-            android:name=".activities.HomeApp"
+
+
+            android:name=".Vistas.Notas.NotasMenu"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.SyncUp"
+
+
+            android:name=".Vistas.Tareas.AddTask"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+
+            android:name=".Vistas.Cuadernos.BooksMenu"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.CreateAccount"
-            android:parentActivityName=".activities.LogIn" />
+
+            android:name=".Vistas.Tareas.EditTask"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".activities.ChargingScreen"
+            android:name=".Vistas.Tareas.TaskList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vistas.Configuracion.Settings"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vistas.Categorias.CategoryList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vistas.Inicio.HomeApp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vistas.Precarga.SyncUp"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vistas.Autenticacion.CreateAccount"
+            android:parentActivityName=".Vistas.Autenticacion.LogIn"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Vistas.Precarga.ChargingScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -71,7 +113,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.LogIn"
+            android:name=".Vistas.Inicio.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Autenticacion.LogIn"
             android:exported="true"
             android:label="@string/title_activity_login" />
     </application>
