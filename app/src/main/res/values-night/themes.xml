@@ -2,7 +2,6 @@
     <!-- Base application theme. -->
     <style name="Theme.TaskApp" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="android:background">@color/Color1_Dark</item>
         <item name="android:textColorTertiary">@color/Color3_Dark</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/Color5_Dark</item>
@@ -17,5 +16,13 @@
     <color name="Color_Secundario">@color/Color6_Dark</color>
     <color name="Color_Terciario">@color/Color7_Dark</color>
     <color name="Color_Cuaternario">@color/Color8_Dark</color>
+    <color name="Editar">@color/Color9_Light</color>
+    <color name="Eliminar">@color/Color10_Light</color>
+
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
 
 </resources>
